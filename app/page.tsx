@@ -234,7 +234,7 @@ export default function Home() {
                   href="https://fr.tipeee.com/nazimboudeffa"
                   className="inline-flex items-center justify-center px-5 md:px-6 py-2.5 md:py-3 rounded-lg bg-purple-700 text-white font-semibold border-2 border-white hover:bg-purple-800 transition-colors text-sm md:text-base whitespace-nowrap"
                 >
-                  ❤️ Donate Instead
+                  ❤️ Donate
                 </a>
               </div>
             </div>
@@ -255,11 +255,11 @@ export default function Home() {
             {/* Left Scroll Button */}
             <button
               onClick={scrollLeft}
-              className="flex absolute left-0 top-1/2 -translate-y-1/2 z-10 h-full w-12 md:w-16 bg-linear-to-r from-purple-100 to-transparent items-center justify-start hover:from-purple-200 transition-colors"
+              className="flex absolute left-0 top-1/2 -translate-y-1/2 z-10 h-full w-12 md:w-16 bg-linear-to-r from-purple-200 to-transparent items-center justify-start hover:from-purple-300 transition-colors"
               aria-label="Scroll left"
             >
-              <div className="ml-2 md:ml-4 w-7 h-7 md:w-8 md:h-8 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors">
-                <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="ml-2 md:ml-4 w-7 h-7 md:w-8 md:h-8 rounded-full bg-purple-600 shadow-xl flex items-center justify-center hover:bg-purple-700 transition-colors border border-purple-500">
+                <svg className="w-4 h-4 md:w-5 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
                 </svg>
               </div>
@@ -268,17 +268,17 @@ export default function Home() {
             {/* Right Scroll Button */}
             <button
               onClick={scrollRight}
-              className="flex absolute right-0 top-1/2 -translate-y-1/2 z-10 h-full w-12 md:w-16 bg-linear-to-l from-purple-100 to-transparent items-center justify-end hover:from-purple-200 transition-colors"
+              className="flex absolute right-0 top-1/2 -translate-y-1/2 z-10 h-full w-12 md:w-16 bg-linear-to-l from-purple-200 to-transparent items-center justify-end hover:from-purple-300 transition-colors"
               aria-label="Scroll right"
             >
-              <div className="mr-2 md:mr-4 w-7 h-7 md:w-8 md:h-8 rounded-full bg-white shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors">
-                <svg className="w-4 h-4 md:w-5 md:h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="mr-2 md:mr-4 w-7 h-7 md:w-8 md:h-8 rounded-full bg-purple-600 shadow-xl flex items-center justify-center hover:bg-purple-700 transition-colors border border-purple-500">
+                <svg className="w-4 h-4 md:w-5 md:h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
             </button>
 
-            <div className="horizontal-scroll flex gap-6 pb-4 snap-x snap-mandatory scrollbar-hide">
+            <div className="horizontal-scroll flex items-center gap-6 pb-4 snap-x snap-mandatory scrollbar-hide">
               {templates.map((template) => (
                 <Link
                   key={template.slug}
